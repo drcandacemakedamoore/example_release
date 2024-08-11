@@ -58,6 +58,10 @@ dev = [
     "pycodestyle", 
     "pytest",
 ]
+docs = [
+     "sphinx",
+     "piccolo_theme",
+]
 
 [project.urls]
 Repository = "https://github.com/brainspinner/cvasl"
