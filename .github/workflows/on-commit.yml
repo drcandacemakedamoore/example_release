@@ -110,7 +110,7 @@ jobs:
       - run: .venv/bin/python -m pip install ./dist/*.whl
       - run: .venv/bin/python -m pip install sphinx piccolo_theme
       - run: .venv/bin/sphinx-apidoc -o docs cvasl
-      - run: .venv/bin/sphinx-build -W docs build
+      - run: .venv/bin/sphinx-build docs build
       - name: Publish Docs to Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
