@@ -27,7 +27,6 @@ jobs:
       - run: python3.11 -m venv .venv
       - run: .venv/bin/python -m pip install wheel twine
       - run: .venv/bin/python setup.py bdist_wheel
-      - run: .venv/bin/python setup.py bdist_egg
 
   CondaBuild:
     runs-on: ${{ matrix.os }}
