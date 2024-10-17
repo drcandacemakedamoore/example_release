@@ -405,9 +405,9 @@ class SdistConda(Command):
         self.distribution.install_requires = translate_reqs(
             self.distribution.install_requires,
         )
-        self.distribution.tests_require = translate_reqs(
-            self.distribution.tests_require,
-        )
+        # self.distribution.tests_require = translate_reqs(
+        #     self.distribution.tests_require,
+        # )
         bdist_egg = BDistEgg(self.distribution)
         bdist_egg.initialize_options()
         bdist_egg.finalize_options()
@@ -632,7 +632,7 @@ if __name__ == '__main__':
             'umap-learn>=0.5.1',
             'yellowbrick>=1.3',
         ],
-        tests_require=['pytest', 'nbmake', 'pycodestyle', 'isort', 'wheel'],
+        # tests_require=['pytest', 'nbmake', 'pycodestyle', 'isort', 'wheel'],
         setup_requires=['wheel'],
         extras_require={
             'dev': [
